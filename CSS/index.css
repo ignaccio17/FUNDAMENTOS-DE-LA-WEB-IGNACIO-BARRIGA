@@ -1,0 +1,39 @@
+*{
+    font-family: cursive;
+}
+
+h1 {
+    background-color: black;
+    color:#fff;
+}
+
+span {
+    color: cyan;
+}
+
+h2 {
+    background-color: blueviolet;
+    color: #fff;
+    text-align: center;
+    font-style: italic;
+}
+
+h3{
+    background-color: rgb(161, 174, 255);
+    text-decoration: underline;
+    text-align: right;
+    color: rgb(19, 20, 66);
+}
+
+h3 {
+    font-size: 10pt;
+  }
+  p {
+    font-size: 14px;
+  }
+  a {
+    font-size: 1.2em;
+  }
+  span {
+    font-size: 80%;
+  }

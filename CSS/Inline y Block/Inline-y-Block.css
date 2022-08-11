@@ -1,0 +1,64 @@
+/* Cada elemento HTML tiene una propiedad de visualización predeterminada de 
+"bloque" o "en línea", pero no estamos obligados a seguir con el valor 
+predeterminado, ya que podemos cambiarlo en nuestro CSS.*/
+
+h1, h2 {
+    display: inline;
+    background-color: cyan;
+}
+label, input {
+    display: block;
+}
+
+/* Si queremos poder cambiar el ancho y permitir que los elementos estén uno
+al lado del otro, tenemos una tercera opción "inline-block".
+Inline parece realmente genial, pero los elementos en línea ignorarán nuestros
+intentos de aplicarles ancho.*/
+
+h1, h2 {
+    display: inline;
+    background-color: cyan;
+    width: 200px; /* this won't work!!! */
+}
+
+h1, h2 {
+    display: inline-block;
+    background-color: cyan;
+    width: 200px; /* this will work! */
+}
+
+/* Podemos hacer uso de esto para crear columnas en nuestras 
+    páginas web, así… */
+
+p {
+    display: inline-block;
+    width: 160px;
+    box-sizing: border-box;
+    padding: 20px;
+    background-color: lightcyan;
+    margin: 10px;
+  }
+
+/* ¿Qué pasa si tenemos columnas con distinta cantidad de contenido? */
+
+p {
+    display: inline-block;
+    width: 200px;
+    box-sizing: border-box;
+    padding: 20px;
+    background-color: lightgreen;
+    margin: 10px;
+  }
+
+/* vertical-align: ; para acomodar el block hacia cualquier posicion top,down,right,left */
+
+/* ¿Qué pasa si tenemos elementos que tradicionalmente están en 
+línea como esta colección de enlaces?*/
+
+a {
+    text-decoration: none;
+    color: darkslategrey;
+    background-color: blanchedalmond;
+    padding: 10px;
+    margin: 10px;
+  }

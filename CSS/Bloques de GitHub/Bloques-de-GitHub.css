@@ -1,0 +1,46 @@
+body{
+    background-image: url(img/ruido-blanco.jpg);
+    
+}
+
+img {
+    width: 400px;
+    height: 300px;
+    display: flex;
+}
+
+h1 {
+    text-align: center;
+}
+
+#arriba {
+    background-color: cornflowerblue;
+    width: 1850px;
+    height: 400px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#medio {
+    background-color: palevioletred;
+    width: 1850px;
+    height: 400px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#abajo {
+    background-color: aliceblue;
+    width: 1850px;
+    height: 400px;
+    margin-left: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}

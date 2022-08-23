@@ -1,0 +1,197 @@
+
+
+El mar, 23 ago 2022 a las 11:12, BENJAMIN SILVA OSORIO (<benjamin.silva.osorio@alumnos.sip.cl>) escribió:
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.nav {
+    display: flex;
+    width: auto;
+    background-color: black;
+}
+
+.nav-title {
+    flex: 1;
+    color: white;
+    margin-top: 15px;
+}
+
+.nav-links {
+    display: flex;
+    flex: 4;
+    justify-content: space-evenly;
+    align-items: center;
+    list-style-type: none;
+    justify-content: flex-start;
+}
+
+.nav-links li a {
+    margin-right: 20px;
+    text-decoration: none;
+}
+
+li a {
+    color: white;
+}
+
+.active {
+    font-weight: bolder;
+}
+
+.btn {
+    background-color: #2ECCFA;
+    padding: 10px;
+    color: white;
+    font-size: 15px;
+    font-weight: bolder;
+}
+
+.contenedor {
+    width: 1000px;
+    display: flex;
+    margin:50px auto;
+}
+
+.contenedor-nav {
+    width: 1000px;
+    display: flex;
+    margin: 0 auto;
+    align-items: center;
+}
+
+.contenido-principal {
+    flex: 2;
+    margin-right: 30px;
+}
+
+.sidebar {
+    flex: 1;
+}
+
+.user-card {
+    background-color: white;
+    border: 2px solid #424242;
+    border-radius: 5px;
+    margin-bottom: 40px;
+}
+
+.card-header {
+    height: 125px;
+    background-color: rgb(16, 177, 177);
+    margin-bottom: 70px;
+}
+
+.card-second {
+    height: 40px;
+    background-color: #424242;
+    padding: 15px;
+    
+}
+
+.avatar {
+    height: 150px;
+    position: relative;
+    top: 50px;
+    left: 20px;
+    border: 3px solid rgb(228, 226, 226);
+    border-radius: 50%;
+}
+
+.little-avatar {
+    height: 30px;
+    border-radius: 50%;
+}
+
+.card-body {
+    padding: 20px;
+}
+
+.card-body-2 {
+    border-top: 2px solid #424242;
+}
+
+.card-body-2 p {
+    margin: 10px 0 10px 10px;
+    text-decoration: underline;
+}
+
+.icono {
+    height: 20px;
+    margin-right: 5px;
+}
+
+h1, h3, p {
+    margin-bottom: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h2 {
+    font-size: 25px;
+    color: white;
+}
+
+.year {
+    color: grey;
+}
+
+.request {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.name-request {
+    flex: 1;
+    display: flex;
+}
+
+.name-request p {
+    margin: 5px 0 5px 10px;
+    font-weight: 700;
+}
+
+.button {
+    background-color: rgb(216, 204, 204);
+    color: black;
+    padding: 7px;
+    border: none;
+    border-radius: 50%;
+    width: 37px;
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+.button-connections {
+    background-color: rgb(216, 204, 204);
+    color: black;
+    padding: 10px;
+    border: none;
+    border-radius: 20px;
+    width: 50px;
+    font-size: 15px;
+    margin-right: 10px;
+    font-weight: 500;
+}
+
+.card-aside-request {
+    display: flex;
+    align-items: center;
+}
+
+.check, .delete {
+    background-color: gray;
+    color: white;
+    padding: 7px;
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    font-size: 20px;
+    margin-right: 10px;
+    font-weight: 700;
+}

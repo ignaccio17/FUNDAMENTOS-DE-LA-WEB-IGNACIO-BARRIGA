@@ -9,14 +9,15 @@
         color:rgb(255, 255, 255);
         background-color: rgb(0, 153, 255);
         border: 3px solid black;
-        width: 150px;
-        height: 30px;
+        width: 90px;
+        height: 40px;
         cursor: pointer;
+        font-size: 1.25em;
     }
 
     .nav-links{
         margin: 20px;
-        margin-top: -45px;
+        margin-top: -55px;
     }
     
     ul {
@@ -32,7 +33,7 @@
     
     .main{
     
-    margin-bottom: -90px;
+    margin-bottom: -100px;
     
     }
 
@@ -47,8 +48,9 @@
         margin-top: 35px;
         margin-left: 350px;
         width: 800px;
-        height: 30px;
+        height: 45px;
         border: 3px solid black;
+        font-size: 1.75em;
     }
 
     #nav a {
@@ -56,7 +58,9 @@
     }
 
     a {
-        color: black;
+        color: rgb(0, 102, 255);
+        text-decoration: underline;
+        font-size: 1em;
     }
 
     h1 {
@@ -77,11 +81,12 @@
 
 .main2 h1{
     margin-left: 55px;
+    font-size: 2em;
 }
 
 .main2 p, h3{
     text-align: center;
-    font-size: 1em;
+    font-size: 1    em;
     margin-left: -730px;
 }
 
@@ -93,12 +98,22 @@
         width: 150px;
         height: 50px;
         cursor: pointer;
+        font-size: 1.25em;
     }
 
     .nav2{
         margin-left: 20px;
         margin-top: 60px;
     }
+
+.text2 p{
+    font-size: 1.30em;
+}
+
+.text2{
+    margin-top: -170px;
+    margin-left: 400px;
+}
 
 /* ----------------------------------- */
 
@@ -113,11 +128,12 @@
 
 .main3 h1{
     margin-left: 55px;
+    font-size: 2em;
 }
 
 .main3 p, h3{
     text-align: center;
-    font-size: 1em;
+    font-size: 1.50em;
     margin-left: -700px;
 }
 
@@ -129,11 +145,21 @@
         width: 150px;
         height: 50px;
         cursor: pointer;
+        font-size: 1.25em;
     }
 
     .nav3{
-        margin-left: 0px;
+        margin-left: 20px;
         margin-top: 60px;
+    }
+
+    .text3 p{
+        font-size: 1.30em;
+    }
+    
+    .text3{
+        margin-top: -170px;
+        margin-left: 400px;
     }
 
 /* ----------------------------------- */
@@ -151,5 +177,21 @@
 .main4 h1, h2{
     font-size: 2em;
     text-align: left;
-    margin-left: 50px;
+    margin-left: 120px;
 }
+
+.nav4 button{
+    box-shadow: 5px 5px black;
+        color:black;
+        background-color: rgb(45, 160, 22);
+        border: 3px solid black;
+        width: 300px;
+        height: 50px;
+        cursor: pointer;
+        font-size: 1.25em;
+    }
+
+    .nav4{
+        margin-left: 80px;
+        margin-top: 10px;
+    }

@@ -1,0 +1,155 @@
+* {
+    font-family: Comic Sans MS, Comic Sans, cursive;
+    
+    }
+    
+    .nav-links button{
+        
+        box-shadow: 5px 5px black;
+        color:rgb(255, 255, 255);
+        background-color: rgb(0, 153, 255);
+        border: 3px solid black;
+        width: 150px;
+        height: 30px;
+        cursor: pointer;
+    }
+
+    .nav-links{
+        margin: 20px;
+        margin-top: -45px;
+    }
+    
+    ul {
+        display: flex;
+        align-items: flex-end;
+        justify-content: flex-end;
+    }
+    
+    li {
+        display: inline;
+        margin: 10px 10px 10px 10px;
+    }
+    
+    .main{
+    
+    margin-bottom: -90px;
+    
+    }
+
+    #nav {
+        background-color: rgb(146, 146, 146);
+        padding: 1px;
+        margin-left: 200px;
+        margin-right: 200px;
+    }
+
+    .barra input{
+        margin-top: 35px;
+        margin-left: 350px;
+        width: 800px;
+        height: 30px;
+        border: 3px solid black;
+    }
+
+    #nav a {
+        color: white;
+    }
+
+    a {
+        color: black;
+    }
+
+    h1 {
+        color: black;
+        margin-left: 40px;
+    }
+
+/* ----------------------------------- */
+
+#back2 {
+    background-color: white;
+    border: 3px solid black;
+    margin-left: 200px;
+    margin-right: 800px;
+    margin-top: 100px;
+    height: 300px;
+}
+
+.main2 h1{
+    margin-left: 55px;
+}
+
+.main2 p, h3{
+    text-align: center;
+    font-size: 1em;
+    margin-left: -730px;
+}
+
+.nav2 button{
+    box-shadow: 5px 5px black;
+        color:black;
+        background-color: rgb(255, 251, 0);
+        border: 3px solid black;
+        width: 150px;
+        height: 50px;
+        cursor: pointer;
+    }
+
+    .nav2{
+        margin-left: 20px;
+        margin-top: 60px;
+    }
+
+/* ----------------------------------- */
+
+#back3 {
+    background-color: white;
+    border: 3px solid black;
+    margin-left: 200px;
+    margin-right: 800px;
+    margin-top: 20px;
+    height: 300px;
+}
+
+.main3 h1{
+    margin-left: 55px;
+}
+
+.main3 p, h3{
+    text-align: center;
+    font-size: 1em;
+    margin-left: -700px;
+}
+
+.nav3 button{
+    box-shadow: 5px 5px black;
+        color:black;
+        background-color: rgb(255, 251, 0);
+        border: 3px solid black;
+        width: 150px;
+        height: 50px;
+        cursor: pointer;
+    }
+
+    .nav3{
+        margin-left: 0px;
+        margin-top: 60px;
+    }
+
+/* ----------------------------------- */
+
+#back4 {
+    background-color: white;
+    border: 3px solid black;
+    margin-left: 1200px;
+    margin-right: 200px;
+    margin-top: -632px;
+    height: 230px;
+    width: 500px;
+}
+
+.main4 h1, h2{
+    font-size: 2em;
+    text-align: left;
+    margin-left: 50px;
+}

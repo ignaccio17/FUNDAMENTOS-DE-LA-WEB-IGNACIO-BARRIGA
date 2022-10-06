@@ -1,0 +1,104 @@
+/* CSS reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+      
+  /* Clase fixed-width container que se "autocentrará" a sí misma */
+  .container {
+    width: 1200px;
+    margin: 0 auto;
+  }
+  
+
+/* BOTON FAVORITO */
+
+.btn button{
+    font-size: 1.25em;
+    font-weight: bold;
+    padding: 10px 30px;
+    border-radius: 5px;
+    border: 2px solid rgba(0,0,0,0.3);
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+    color: white;
+    background-color: rgb(6, 4, 150);
+}
+
+.btn button:hover{
+    background-color: rgb(71, 97, 245)
+}
+
+/* Columnas flex-ibles FAVORITAS */
+
+.row{
+
+}
+
+
+
+header{
+    background-color: rgba(0, 0, 0, 0.295);
+}
+
+header .logo{
+        background-size: cover;
+        background-position: center center;
+}
+
+.logo img {
+    max-height: 150px;
+    max-width: 150px; 
+    margin-left: -170px;
+}
+
+header .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header nav{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 50px;
+    flex-direction: row;
+        padding-bottom: 0;
+        padding-right: 20px;
+}
+
+.navbar a {
+    margin-top: -40px;
+}
+
+.sign nav{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top: -20px;
+
+}
+
+.lupa img{
+    margin-top: 5px;
+    margin-left: 200px;
+}
+
+header a{
+    white-space: nowrap;
+    padding: 5px 12px;
+    margin-top: -30px;
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+}
+
+header a:hover{
+    color: rgb(128, 128, 128);
+}
+
+a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}

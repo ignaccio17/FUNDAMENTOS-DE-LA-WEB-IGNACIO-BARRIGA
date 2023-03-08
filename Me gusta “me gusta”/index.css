@@ -85,6 +85,7 @@
     margin-left: -10px;
     text-decoration-line: underline;
     color: rgb(39, 158, 255);
+    cursor: pointer;
 }
 
 .nav2 button{
@@ -119,7 +120,7 @@
     border: 3px solid black;
     margin-left: 640px;
     margin-right: 600px;
-    margin-top: -456px;
+    margin-top: -454px;
     height: 260px;
     width: 1055px;
 }
@@ -128,26 +129,181 @@
     font-size: 2em;
     text-align: left;
     margin-left: 120px;
+    margin-top: -70px;
+}
+
+.nav4 h3{
+    font-size: 1.80em;
+    text-align: left;
+    margin-left: 630px;
+    margin-top: -116px;
+}
+
+.nav4 h6{
+    font-size: 2em;
+    text-align: left;
+    margin-left: 580px;
+    margin-top: -45px;
 }
 
 .main4 h2{
     font-size: 1.30em;
     text-align: left;
     margin-left: 120px;
+    margin-top: 40px;
+}
+
+.main4 il{
+    text-align: left;
+    text-decoration-line: underline;
+    color: rgb(39, 158, 255);
+    cursor: pointer;
 }
 
 .nav4 button{
-    box-shadow: 5px 5px black;
+    box-shadow: 5px 5px rgb(0, 0, 0);
         color:black;
-        background-color: rgb(45, 160, 22);
+        background-color: rgb(255, 217, 0);
         border: 3px solid black;
-        width: 300px;
+        width: 100px;
         height: 50px;
         cursor: pointer;
         font-size: 1.25em;
+        margin-left: 760px;
+        margin-top: 40px;
     }
 
-    .nav4{
+    .nav4 {
+        margin-left: 80px;
+        margin-top: 10px;
+    }
+
+    /* ----------------------------------- */
+
+    #back5 {
+        background-color: white;
+        border: 3px solid black;
+        margin-left: 640px;
+        margin-right: 600px;
+        margin-top: 30px;
+        height: 260px;
+        width: 1055px;
+    }
+    
+    .main5 h1{
+        font-size: 2em;
+        text-align: left;
+        margin-left: 120px;
+        margin-top: -70px;
+    }
+    
+    .nav5 h3{
+        font-size: 1.80em;
+        text-align: left;
+        margin-left: 630px;
+        margin-top: -116px;
+    }
+    
+    .nav5 h6{
+        font-size: 2em;
+        text-align: left;
+        margin-left: 580px;
+        margin-top: -45px;
+    }
+    
+    .main5 h2{
+        font-size: 1.30em;
+        text-align: left;
+        margin-left: 120px;
+        margin-top: 40px;
+    }
+    
+    .main5 il{
+        text-align: left;
+        text-decoration-line: underline;
+        color: rgb(39, 158, 255);
+        cursor: pointer;
+    }
+    
+    .nav5 button{
+        box-shadow: 5px 5px rgb(0, 0, 0);
+            color:black;
+            background-color: rgb(255, 217, 0);
+            border: 3px solid black;
+            width: 100px;
+            height: 50px;
+            cursor: pointer;
+            font-size: 1.25em;
+            margin-left: 760px;
+            margin-top: 40px;
+        }
+    
+        .nav5 {
+            margin-left: 80px;
+            margin-top: 10px;
+        }
+
+    /* ----------------------------------- */
+
+#back6 {
+    background-color: white;
+    border: 3px solid black;
+    margin-left: 640px;
+    margin-right: 600px;
+    margin-top: 30px;
+    height: 260px;
+    width: 1055px;
+}
+
+.main6 h1{
+    font-size: 2em;
+    text-align: left;
+    margin-left: 120px;
+    margin-top: -70px;
+}
+
+.nav6 h3{
+    font-size: 1.80em;
+    text-align: left;
+    margin-left: 630px;
+    margin-top: -116px;
+}
+
+.nav6 h6{
+    font-size: 2em;
+    text-align: left;
+    margin-left: 580px;
+    margin-top: -45px;
+}
+
+.main6 h2{
+    font-size: 1.30em;
+    text-align: left;
+    margin-left: 120px;
+    margin-top: 40px;
+}
+
+.main6 il{
+    text-align: left;
+    text-decoration-line: underline;
+    color: rgb(39, 158, 255);
+    cursor: pointer;
+}
+
+.nav6 button{
+    box-shadow: 5px 5px rgb(0, 0, 0);
+        color:black;
+        background-color: rgb(255, 217, 0);
+        border: 3px solid black;
+        width: 100px;
+        height: 50px;
+        cursor: pointer;
+        font-size: 1.25em;
+        margin-left: 760px;
+        margin-top: 40px;
+    }
+
+    .nav6 {
         margin-left: 80px;
         margin-top: 10px;
     }

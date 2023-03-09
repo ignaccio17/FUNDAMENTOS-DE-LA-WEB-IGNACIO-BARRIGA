@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Pacman ignacio</title>
+    <style type="text/css">
+
+        *{
+    margin: 0px;
+    padding: 0px;
+        }
+        .row {
+    line-height:0 ;
+        }
+        .wall {
+    background-color:rgb(0, 13, 199);
+    height: 40px;
+    width: 40px;
+    display: inline-block;
+        }
+        .cherry {
+    background-color:rgb(0, 0, 0);
+    height: 40px;
+    width: 40px;
+    display: inline-block;
+    background-image: url('cherry.png');
+    background-size: contain;
+        }
+        .coin {
+    background-color:rgb(0, 0, 0);
+    height: 40px;
+    width: 40px;
+    display: inline-block;
+    background-image: url('coin.gif');
+    background-size: contain;
+        }
+        .blank {
+    background-color:black;
+    height: 40px;
+    width: 40px;
+    display: inline-block;
+        }
+        #enemy1 {
+    background-color:black;
+    height: 40px;
+    width: 40px;
+    display: inline-block;
+    background-image: url('phantom.gif');
+    background-size: contain;
+    position: absolute;
+    left: 40px;
+    top: 40px;
+        }
+        #ninjaman {
+    background-color:black;
+    height: 40px;
+    width: 40px;
+    display: inline-block;
+    background-image: url('pacman.gif');
+    background-size: contain;
+    position: absolute;
+    left: 40px;
+    top: 40px;
+        }
+     
+     
+    </style>
+
+</head>
+<body>
+
+    <div id="world"> </div>
+<div id="ninjaman"></div>
+<div id="enemy1"></div>
+<div id="enemy2"></div>
+<div id="enemy3"></div>
+<div><h1 id="title">Puntos: 0</h1></div>
+<div><h1 id="lives">Vidas: 3</h1></div>
+
+<script type="text/javascript">
+
+function random(max,min){
+      return Math.floor(Math.random()* (max-min +1))+min;
+      }
+
+var world = [
+            [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1,],
+            [1, 0, random(1, 4), random(-1, 4), random(1, 4), random(-1, 4), random(-1, 4), random(1, 4), random(-1, 4), random(1, 4), 1],
+            [1, random(1, 4), random(-1, 4), random(-1, 4), random(-1, 4), random(-1, 4), random(-1, 4), random(-1, 4), random(-1, 4), random(1, 4), 1],
+            [1, random(1, 4), random(-1, 4), random(-1, 4), random(-1, 4), random(-1, 4), random(-1, 4), random(-1, 4), random(-1, 4), random(1, 4), 1],
+            [1, random(1, 4), random(-1, 4), random(-1, 4), random(-1, 4), random(-1, 4), random(-1, 4), random(-1, 4), random(-1, 4), random(1, 4), 1],
+            [1, random(1, 4), random(-1, 4), random(-1, 4), random(-1, 4), random(-1, 4), random(-1, 4), random(-1, 4), random(-1, 4), random(1, 4), 1],
+            [1, random(1, 4), random(-1, 4), random(-1, 4), random(-1, 4), random(-1, 4), random(-1, 4), random(-1, 4), random(-1, 4), random(1, 4), 1],
+            [1, random(1, 4), random(-1, 4), random(-1, 4), random(-1, 4), random(-1, 4), random(-1, 4), random(-1, 4), random(-1, 4), 0, 1],
+            [1, random(1, 4), random(-1, 4), random(-1, 4), random(-1, 4), random(-1, 4), random(-1, 4), random(-1, 4), random(-1, 4), random(1, 4), 1],
+            [1, random(1, 4), random(1, 4), random(-1, 4), random(-1, 4), random(1, 4), random(-1, 4), random(1, 4), random(-1, 4), random(1, 4), 1],
+            [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1],
+
+        ];
+
+var worldDict = {
+    0: 'blank',
+    1: 'wall',
+    2: 'coin',
+    3: 'cherry',
+}
+
+
+function drawWorld() {
+    output = "";
+    for(var row = 0; row < world.length; row++){
+    output+= " <div class = 'row' >"
+    for (var x = 0; x< world [row].length;x++){
+      output+= "<div class = '"+worldDict [
+          world[row] [x]]+"'></div>" 
+     
+    }
+    output += "</div>"
+}
+
+  document.getElementById('world').innerHTML=
+  output;
+
+ }
+ drawWorld();
+
+
+var ninjaman = {
+    x: 1,
+    y: 1
+}
+
+var enemy1 = {  //red
+    x: 9,
+    y: 9
+} 
+
+var score = 0;
+
+var lives = 3;
+
+function drawNinjaman() {
+    document.getElementById("ninjaman").style.top = ninjaman.y * 40 + 'px'
+    document.getElementById("ninjaman").style.left = ninjaman.x * 40 + 'px'
+}
+drawNinjaman()
+
+function drawenemy1() {
+    document.getElementById("enemy1").style.top = enemy1.y * 40 + 'px'
+    document.getElementById("enemy1").style.left = enemy1.x * 40 + 'px'
+}
+drawenemy1()
+
+document.onkeydown = function(e) {  // movement of ninja
+    if(e.keyCode == 37){ //left
+        if(world[ninjaman.y][ninjaman.x - 1] !=1){
+            ninjaman.x--;
+            enemy1.x++
+            enemy3.x++
+            
+        }
+    }
+    if(e.keyCode == 39){ //right
+        if(world[ninjaman.y][ninjaman.x + 1] !=1){
+            ninjaman.x++;
+            enemy1.x--
+            enemy3.x--
+        }
+    }
+    if(e.keyCode == 40){ //down
+        if(world[ninjaman.y + 1][ninjaman.x] !=1){
+            ninjaman.y++;
+            enemy1.y--
+            enemy2.y--
+        }
+    }
+    if(e.keyCode == 38){ //up
+        if(world[ninjaman.y - 1][ninjaman.x] !=1){
+            ninjaman.y--;
+            enemy1.y++
+            enemy2.y++
+        }
+    }
+    if (world[ninjaman.y][ninjaman.x] === 2) {  // update score of sushi
+                world[ninjaman.y][ninjaman.x] = 0;
+
+                score = score + 5
+                document.getElementById('title').innerHTML = "Record" + score;
+            } else if (world[ninjaman.y][ninjaman.x] === 3) { //update score of nigiri
+                world[ninjaman.y][ninjaman.x] = 0;
+
+                score = score + 50
+                document.getElementById('title').innerHTML = "Record " + score;
+            } if ((ninjaman.x === enemy1.x) && (ninjaman.y === enemy1.y) || (ninjaman.x === enemy2.x) && (ninjaman.y === enemy2.y) || (ninjaman.x === enemy3.x) && (ninjaman.y === enemy3.y)) {  //update score of ghost
+                lives = lives - 1
+                document.getElementById('lives').innerHTML = "Vidas " + lives;
+            } else if (lives === 0) {
+                document.write("Game over! tu Record es " + score + ". actualiza para volver a empezar.")
+            }       
+
+    drawNinjaman();
+    drawWorld();
+    drawenemy1();
+
+}
+
+</script>
+</body>
+</html>
